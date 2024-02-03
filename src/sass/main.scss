@@ -1,0 +1,94 @@
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "base/reset";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap";
+
+:root {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 11px;
+  color: $white;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg 45% 44%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $white;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $green;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $off-black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  min-width: 18vw;
+  max-width: 90vw;
+  margin-inline: 3rem;
+  background-color: $dark-grey;
+  border-radius: 2%;
+}
+
+img {
+  max-width: 6rem;
+  margin-top: 1rem;
+  border-radius: 100%;
+}
+
+.titles {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-block: 0;
+  margin-inline: 0.8rem;
+  color: $white;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-inline: 1rem;
+  margin-top: 0;
+  list-style: none;
+}
+
+li {
+  width: 90%;
+  padding-block: 1rem;
+  margin-block: 0.5rem;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  background-color: $grey;
+  border-radius: 5%;
+  size: 1rem;
+}
